@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Контакты</title>
+    <title>Объект “Свияжск”</title>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
@@ -79,70 +79,65 @@
     </div>
     <!-- =========================================END navbar ==================================================== -->
     <!-- ================================page__hero================================= -->
-    <div class="page__hero page__hero__contacts">
+    <div class="page__hero">
         <div class="container">
-            <div class="contacts">
-                <div class="contacts__content">
-                    <ul class="breadcrumbs">
-                        <span>
-                            <span>
-                                <a href="https://alliance-ar.com/">Главная страница</a> » <span class="breadcrumb_last" aria-current="page">Контакты</span>
-                            </span>
-                        </span>
-                    </ul>
-                    <h1 class="page__title">Контакты</h1>
-                    <ul class="contacts__items">
-                        <li class="contacts__item">
-                            <div class="contacts__item__icon" style="background-image: url(img/contacts__loc.png);"></div>
-                            <div class="contacts__item__title">г. Казань, ул Ноксинский спуск 99, оф 15</div>
-                        </li>
-                        <li class="contacts__item">
-                            <div class="contacts__item__icon" style="background-image: url(img/contacts__mail.png);"></div>
-                            <div class="contacts__item__title">info@altius-rf.ru</div>
-                        </li>
-                        <li class="contacts__item">
-                            <div class="contacts__item__icon" style="background-image: url(img/contacts__phone.png);"></div>
-                            <div class="contacts__item__title">+7 (843) 260-97-79</div>
-                        </li>
-                    </ul>
-                    <div class="head__contact__messangers__items">
-                        <a href="/">
-                            <img src="img/head__whatsapp.png" alt="">
-                        </a>
-                        <a href="/">
-                            <img src="img/head__telegram.png" alt="">
-                        </a>
-                        <a href="/">
-                            <img src="img/head__viber.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="contacts__map" id="contacts__map"></div>
-            </div>
+            <ul class="breadcrumbs">
+                <span>
+                    <span>
+                        <a href="https://alliance-ar.com/">Главная страница</a> » <span class="breadcrumb_last" aria-current="page">Объект “Свияжск”</span>
+                    </span>
+                </span>
+            </ul>
+            <h1 class="page__title">Объект “Свияжск”</h1>
+            <div class="page__desc">Заказчик: Администрация Свияжского сельского поселения</div>
         </div>
     </div>
     <!-- ================================END page__hero================================= -->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script>
-        //Яндекс Карта
-        ymaps.ready(init);
-        var myMapAll;
-
-        function init() {
-            myMapAll = new ymaps.Map("contacts__map", {
-                center: [55.763356, 49.234954],
-                zoom: 10,
-            });
-            var myPlacemark_1 = new ymaps.Placemark([55.763356, 49.234954], {
-                balloonContentHeader: "Название объекта",
-                balloonContentBody: "Описание объекта",
-                balloonContentFooter: "",
-                hintContent: "Кликните для более подробной информации",
-            });
-            myMapAll.geoObjects.add(myPlacemark_1);
-        }
-        //END Яндекс Карта
-    </script>
+    <!-- ================================object================================= -->
+    <div class="object sec">
+        <div class="container">
+            <div class="object__gallery">
+                <a data-fancybox="object" data-src="img/object-1.png" href="" class="object__gallery__item" style="background-image: url(img/object-1.png);"></a>
+                <a data-fancybox="object" data-src="img/object-2.png" href="" class="object__gallery__item" style="background-image: url(img/object-2.png);"></a>
+                <a data-fancybox="object" data-src="img/object-3.png" href="" class="object__gallery__item" style="background-image: url(img/object-3.png);"></a>
+                <a data-fancybox="object" data-src="img/object-4.png" href="" class="object__gallery__item" style="background-image: url(img/object-4.png);"></a>
+                <a data-fancybox="object" data-src="img/object-5.png" href="" class="object__gallery__item" style="background-image: url(img/object-5.png);"></a>
+                <a data-fancybox="object" data-src="img/object-6.png" href="" class="object__gallery__item" style="background-image: url(img/object-6.png);"></a>
+            </div>
+            <div class="object__year">Год реализации: 2005</div>
+            <div class="object__content">
+                <p>Обеспечивают огнезащиту металлоконструкций с помощью огнезащитных красок, составов и штукатурок. Они создают на поверхности металла защитный слой с низким уровнем теплопроводности. Это обеспечивает надежную защиту от огня и воздействия высоких температур.</p>
+                <p>Степень огнезащиты металлических конструкций определяют временем с момента начала нагревания и до момента, когда металл начинает деформироваться. Использование огнезащитных красок, составови материалов позволяет увеличить время огнестойкости до 60-240 минут.</p>
+                <p>Точное время огнеустойчивости зависит от количества слоев каски, толщины слоя огнезащитной штукатурки.</p>
+                <p>Огнезащитная краска по металлу содержит в своем составе специальные компоненты, которые при нагревании существенно увеличиваются в размере и покрывают металл толстым защитным слоем, который практически не проводит металл и повышает тем самым его огнеустойчивость. </p>
+            </div>
+        </div>
+    </div>
+    <!-- ================================END object================================= -->
+    <!-- ========================================= formblock ================================================= -->
+    <div class="formblock sec">
+        <div class="container">
+            <img src="img/formblock-1.png" alt="" class="formblock__img" />
+            <div class="section__title">Закажите расчёт стоимости</div>
+            <div class="section__desc"> и мы свяжемся с Вами для уточнения исходных данных </div>
+            <form action="">
+                <div class="inputgroup">
+                    <label for="">Введите Ваше имя:</label>
+                    <input type="text" placeholder="Александр Иванов" />
+                </div>
+                <div class="inputgroup">
+                    <label for="">Введите Ваше имя:</label>
+                    <input type="text" placeholder="Александр Иванов" />
+                </div>
+                <div class="inputgroup">
+                    <button class="btn">Отправить</button>
+                </div>
+            </form>
+            <div class="formblock__politics"> Нажимая на кнопку “отправить” Вы принимаете условия <a href="">политики конфинденциальности</a>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================END formblock ================================================= -->
     <!-- ========================================= footer ================================================= -->
     <div class="footer sec">
         <div class="container">
