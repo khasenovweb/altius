@@ -1,0 +1,92 @@
+{% set title = 'Отзывы' %} {% extends 'layouts/_main.html' %} {% block
+content %}
+
+<!-- ================================page__hero================================= -->
+<div class="page__hero">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <span>
+        <span>
+          <a href="https://alliance-ar.com/">Главная страница</a> »
+          <span class="breadcrumb_last" aria-current="page">О нас</span>
+        </span>
+      </span>
+    </ul>
+    <h1 class="page__title">О нас</h1>
+    <div class="page__desc">Компания «Altius» начинала свою деятельность в 2010 году, как компания в области предоставления услуг в сфере обработки 
+    металоконструкций и других поверхностей новейшими технологий огнезащитных и лакокрасочных материалов, 
+    а также имеется спектр услуг в области фасадных и монтажных работ.</div>
+  </div>
+</div>
+<!-- ================================END page__hero================================= -->
+
+<!-- ================================about__as================================= -->
+<div class="about__as sec">
+  <div class="container">
+    <div class="sec1__sertificate">
+        <img src="img/sertificate.png" alt="">
+        <div class="sec1__sertificate__title">Лицезия мчс</div>
+    </div>
+    <div class="about__as__content">
+      <p>Команда АЛЬТИУС  ведет свою деятельность  с 2010 года, как компания, предоставляющая услуги в области 
+      обработки металлоконструкций и других поверхностей  огнезащитными и покрасочными материалами нового 
+      поколения. Также имеется спектр услуг в области фасадных работ.  (Вместо текста под словом О НАС)</p>
+      <div class="orange">Основной спектр наших услуг:</div>
+      <ul>
+        <li>Огнезащита металоконструкций</li>
+        <li>Огнезащита проходок</li>
+        <li>Огнезащита кабелей</li>
+        <li>Огнезащита бетонных конструкций</li>
+        <li>Антикоррозийная защита металлоконструкций</li>
+      </ul>
+      <div class="orange">Будем рады получать Ваши предложения на адрес: info@altius-rf.ru </div>
+      <p>Мы всегда открыты для конструктивного диалога и взаимовыгодного сотрудничества!</p>
+    </div>
+  </div>
+</div>
+<!-- ================================END about__as================================= -->
+<!-- ================================clients================================= -->
+<div class="clients sec">
+  <div class="container">
+    <div class="section__title center">Наши клиенты:</div>
+    <div class="clients__slider owl-carousel">
+      <div class="clients__slider__item" style="background-image: url(img/client-1.png)"></div>
+      <div class="clients__slider__item" style="background-image: url(img/client-2.png)"></div>
+      <div class="clients__slider__item" style="background-image: url(img/client-3.png)"></div>
+    </div>
+  </div>
+</div>
+<!-- ================================END clients================================= -->
+
+
+
+<!-- ========================================= formblock ================================================= -->
+<div class="formblock sec">
+  <div class="container">
+    <img src="img/formblock-1.png" alt="" class="formblock__img" />
+    <div class="section__title">Закажите расчёт стоимости</div>
+    <div class="section__desc">
+      и мы свяжемся с Вами для уточнения исходных данных
+    </div>
+    <form action="">
+      <div class="inputgroup">
+        <label for="">Введите Ваше имя:</label>
+        <input type="text" placeholder="Александр Иванов" />
+      </div>
+      <div class="inputgroup">
+        <label for="">Введите Ваше имя:</label>
+        <input type="text" placeholder="Александр Иванов" />
+      </div>
+      <div class="inputgroup">
+        <button class="btn">Отправить</button>
+      </div>
+    </form>
+    <div class="formblock__politics">
+      Нажимая на кнопку “отправить” Вы принимаете условия
+      <a href="">политики конфинденциальности</a>
+    </div>
+  </div>
+</div>
+<!-- =========================================END formblock ================================================= -->
+
+{% endblock %}
