@@ -269,32 +269,28 @@
 </div>
 <!-- ================================END service__contentblock================================= -->
 <!-- ========================================= formblock ================================================= -->
-<div class="formblock sec">
-  <div class="container">
-    <img src="img/formblock-1.png" alt="" class="formblock__img" />
-    <div class="section__title">Закажите расчёт стоимости</div>
-    <div class="section__desc">
-      и мы свяжемся с Вами для уточнения исходных данных
+    <div class="formblock sec">
+      <div class="container">
+        
+        <div class="section__title">Закажите расчёт стоимости</div>
+        <div class="section__desc">и мы свяжемся с Вами для уточнения исходных данных</div>
+        <form action="" data-validate>
+          <div class="inputgroup">
+            <label for="">Введите Ваше имя:</label>
+            <input type="text" placeholder="Александр Иванов">
+          </div>
+          <div class="inputgroup">
+            <label for="">Введите Ваше имя:</label>
+            <input name="phoneinput" type="text" placeholder="+7 (999) 999-9999" data-mask="phone">
+          </div>
+          <div class="inputgroup">
+            <button class="btn">Отправить</button>
+          </div>
+        </form>
+        <div class="formblock__politics">Нажимая на кнопку “отправить” Вы принимаете условия <a href="">политики конфинденциальности</a></div>
+        <img src="img/formblock-1.png" alt="" class="formblock__img">
+      </div>
     </div>
-    <form action="">
-      <div class="inputgroup">
-        <label for="">Введите Ваше имя:</label>
-        <input type="text" placeholder="Александр Иванов" />
-      </div>
-      <div class="inputgroup">
-        <label for="">Введите Ваше имя:</label>
-        <input type="text" placeholder="Александр Иванов" />
-      </div>
-      <div class="inputgroup">
-        <button class="btn">Отправить</button>
-      </div>
-    </form>
-    <div class="formblock__politics">
-      Нажимая на кнопку “отправить” Вы принимаете условия
-      <a href="">политики конфинденциальности</a>
-    </div>
-  </div>
-</div>
-<!-- =========================================END formblock ================================================= -->
+    <!-- =========================================END formblock ================================================= -->
 
 {% endblock %}

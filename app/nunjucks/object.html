@@ -28,6 +28,11 @@ content %}
       <a data-fancybox="object" data-src="img/object-5.png" href="" class="object__gallery__item" style="background-image: url(img/object-5.png);"></a>
       <a data-fancybox="object" data-src="img/object-6.png" href="" class="object__gallery__item" style="background-image: url(img/object-6.png);"></a>
     </div>
+    <div class="object__gallery__mobile owl-carousel">
+      <div class="object__gallery__mobile__item" style="background-image: url(img/object-1.png);"></div>
+      <div class="object__gallery__mobile__item" style="background-image: url(img/object-1.png);"></div>
+      <div class="object__gallery__mobile__item" style="background-image: url(img/object-1.png);"></div>
+    </div>
     <div class="object__year">Год реализации: 2005</div>
     <div class="object__content">
       <p>Обеспечивают огнезащиту металлоконструкций с помощью огнезащитных красок, составов и штукатурок. Они создают на поверхности металла защитный слой 
@@ -46,33 +51,29 @@ content %}
 </div>
 <!-- ================================END object================================= -->
 <!-- ========================================= formblock ================================================= -->
-<div class="formblock sec">
-  <div class="container">
-    <img src="img/formblock-1.png" alt="" class="formblock__img" />
-    <div class="section__title">Закажите расчёт стоимости</div>
-    <div class="section__desc">
-      и мы свяжемся с Вами для уточнения исходных данных
+    <div class="formblock sec">
+      <div class="container">
+        
+        <div class="section__title">Закажите расчёт стоимости</div>
+        <div class="section__desc">и мы свяжемся с Вами для уточнения исходных данных</div>
+        <form action="" data-validate>
+          <div class="inputgroup">
+            <label for="">Введите Ваше имя:</label>
+            <input type="text" placeholder="Александр Иванов">
+          </div>
+          <div class="inputgroup">
+            <label for="">Введите Ваше имя:</label>
+            <input name="phoneinput" type="text" placeholder="+7 (999) 999-9999" data-mask="phone">
+          </div>
+          <div class="inputgroup">
+            <button class="btn">Отправить</button>
+          </div>
+        </form>
+        <div class="formblock__politics">Нажимая на кнопку “отправить” Вы принимаете условия <a href="">политики конфинденциальности</a></div>
+        <img src="img/formblock-1.png" alt="" class="formblock__img">
+      </div>
     </div>
-    <form action="">
-      <div class="inputgroup">
-        <label for="">Введите Ваше имя:</label>
-        <input type="text" placeholder="Александр Иванов" />
-      </div>
-      <div class="inputgroup">
-        <label for="">Введите Ваше имя:</label>
-        <input type="text" placeholder="Александр Иванов" />
-      </div>
-      <div class="inputgroup">
-        <button class="btn">Отправить</button>
-      </div>
-    </form>
-    <div class="formblock__politics">
-      Нажимая на кнопку “отправить” Вы принимаете условия
-      <a href="">политики конфинденциальности</a>
-    </div>
-  </div>
-</div>
-<!-- =========================================END formblock ================================================= -->
+    <!-- =========================================END formblock ================================================= -->
 
 
 

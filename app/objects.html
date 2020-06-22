@@ -3,17 +3,23 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
     <title>Выполненные объекты</title>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body>
     <!-- ========================================= head ======================================================= -->
     <div class="head">
         <div class="container">
+            <div class="head__hamburger" data-mobile-nav-show>
+                <img src="img/hamburger.png" alt="">
+                <div class="head__hamburger__title">Меню</div>
+            </div>
             <!-- head__contact -->
             <div class="head__contact">
                 <img src="img/head__loc.png" alt="" class="head__contact__icon" />
@@ -23,27 +29,30 @@
             <!-- head__contact -->
             <div class="head__contact">
                 <img src="img/head__env.png" alt="" class="head__contact__icon" />
-                <div class="head__contact__title"> netogna@domen.ru </div>
+                <a href="mailto:netogna@domen.ru" class="head__contact__title"> netogna@domen.ru </a>
             </div>
             <!-- head__contact -->
             <!-- head__contact -->
             <div class="head__contact">
                 <img src="img/head__phone.png" alt="" class="head__contact__icon" />
-                <div class="head__contact__title"> +7 (843) 210-98-76 </div>
+                <a href="tel:+7 (843) 210-98-76" class="head__contact__title"> +7 (843) 210-98-76 </a>
             </div>
             <!-- head__contact -->
-            <button class="btn__small">Заказать обратный звонок</button>
+            <button class="btn__small" data-modal-show="1">Заказать обратный звонок</button>
             <div class="head__contact__messangers">
                 <div class="head__contact__messangers__items">
-                    <a href="/">
-                        <img src="img/head__whatsapp.png" alt="" />
+                    <a href="">
+                        <img src="img/head__whatsapp.png" alt="">
                     </a>
-                    <a href="/">
-                        <img src="img/head__telegram.png" alt="" />
+                    <a href="">
+                        <img src="img/head__telegram.png" alt="">
                     </a>
-                    <a href="/">
-                        <img src="img/head__viber.png" alt="" />
+                    <a href="">
+                        <img src="img/head__viber.png" alt="">
                     </a>
+                    <!-- <a href="/" style="background-image: url(img/head__whatsapp.png);" data-bg-hover="img/head__whatsapp__hover.png" data-bg-original="img/head__whatsapp.png"></a>
+            <a href="/" style="background-image: url(img/head__telegram.png);" data-bg-hover="img/head__telegram__hover.png" data-bg-original="img/head__telegram.png"></a>
+            <a href="/" style="background-image: url(img/head__viber.png);" data-bg-hover="img/head__viber__hover.png" data-bg-original="img/head__viber.png"></a> -->
                 </div>
             </div>
         </div>
@@ -220,12 +229,12 @@
                 </li>
                 <li class="footer__contact">
                     <div class="footer__contact__icon" style="background-image: url(img/footer__mail.png);"></div>
-                    <div class="footer__contact__title">info@altius-rf.ru</div>
+                    <a href="mailto:info@altius-rf.ru" class="footer__contact__title">info@altius-rf.ru</a>
                 </li>
             </ul>
             <div class="footer__phoneblock">
                 <a href="tel:+7 (843) 260-97-79" class="footer__phone">+7 (843) 260-97-79</a>
-                <button class="btn__small">Заказать обратный звонок</button>
+                <button class="btn__small" data-modal-show="1">Заказать обратный звонок</button>
                 <div class="footer__phoneblock__messagers">
                     <a href="/">
                         <img src="img/head__whatsapp.png" alt="">
@@ -241,9 +250,124 @@
         </div>
     </div>
     <!-- =========================================END footer ================================================= -->
+    <!-- ========================================= modals ================================================= -->
+    <div class="modal__wrapper" data-modal="1">
+        <div class="modal">
+            <div class="modal__close" data-modal-close="1">
+                <img src="img/modal__close.png" alt="">
+            </div>
+            <div class="modal__content">
+                <div class="modal__title">Заказать звонок</div>
+                <div class="modal__desc">и наш менеджер свяжется с Вами проконсультирует и поможет определиться с выбором услуги </div>
+                <form action="" data-validate>
+                    <div class="inputgroup">
+                        <label for="">Введите Ваше имя:</label>
+                        <input type="text" placeholder="Александр Иванов">
+                    </div>
+                    <div class="inputgroup">
+                        <label for="">Введите Ваш номер телефона:</label>
+                        <input name="phoneinput" type="text" placeholder="+7 999 876-54-32" data-mask="phone">
+                    </div>
+                    <div class="politics">Нажимая на кнопку "отправить" Вы принимаете условия <a href="">политики конфинденциальности</a></div>
+                    <button class="btn__mini">отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal__wrapper" data-modal="2">
+        <div class="modal">
+            <div class="modal__close" data-modal-close="2">
+                <img src="img/modal__close.png" alt="">
+            </div>
+            <div class="modal__content">
+                <div class="modal__title">Оставить заявку на расчет стоимости</div>
+                <form action="" data-validate>
+                    <div class="inputgroup">
+                        <label for="">Введите Ваше имя:</label>
+                        <input type="text" placeholder="Александр Иванов">
+                    </div>
+                    <div class="inputgroup">
+                        <label for="">Введите Ваш номер телефона:</label>
+                        <input name="phoneinput" type="text" placeholder="+7 999 876-54-32" data-mask="phone">
+                    </div>
+                    <div class="politics">Нажимая на кнопку "отправить" Вы принимаете условия <a href="">политики конфинденциальности</a></div>
+                    <button class="btn__mini">отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal__wrapper" data-modal="3">
+        <div class="modal">
+            <div class="modal__close" data-modal-close="3">
+                <img src="img/modal__close.png" alt="">
+            </div>
+            <div class="modal__content">
+                <div class="modal__title">Благодарим за заявку</div>
+                <div class="modal__desc">Наш менеджер свяжется с Вами в ближайшее время</div>
+                <img class="modal__success__img" src="img/form__success.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- =========================================END modals ================================================= -->
+    <!-- ========================================= mobile__nav ================================================= -->
+    <div class="mobile__nav">
+        <div class="mobile__nav__head">
+            <img src="img/logo-2.png" alt="">
+            <div class="mobile__nav__close">
+                <img src="img/mobile__nav__close.png" alt="">
+            </div>
+        </div>
+        <div class="mobile__nav__title">Огнезащитная обработка металлических конструкцийи АКЗ</div>
+        <div class="mobile__nav__content">
+            <ul class="mobile__nav__links">
+                <li><a href=""> Главная</a></li>
+                <li><a href=""> О нас</a></li>
+                <li class="menu-item-has-children">
+                    <a href=""> Услуги</a>
+                    <ul>
+                        <li><a href="">Огнезащита металоконструкций</a></li>
+                        <li><a href="">Огнезащита проходок</a></li>
+                        <li><a href="">Огнезащита кабелей</a></li>
+                        <li><a href="">Огнезащита бетонных конструкций</a></li>
+                        <li><a href="">Антикоррозийная защита металлоконструкций</a></li>
+                    </ul>
+                </li>
+                <li><a href=""> Лицензии и сертификаты</a></li>
+                <li><a href=""> Новости</a></li>
+                <li><a href=""> Контакты</a></li>
+                <li><a href=""> Отзывы</a></li>
+                <li><a href=""> Отзывы</a></li>
+                <li><a href=""> Отзывы</a></li>
+                <li><a href=""> Отзывы</a></li>
+                <li><a href=""> Отзывы</a></li>
+                <li><a href=""> Отзывы</a></li>
+                <li><a href=""> Отзывы</a></li>
+            </ul>
+        </div>
+        <div class="mobile__nav__footer">
+            <div class="footer__phoneblock">
+                <a href="tel:+7 (843) 260-97-79" class="footer__phone">+7 (843) 260-97-79</a>
+                <button class="btn__small" data-modal-show="1">Заказать обратный звонок</button>
+                <div class="footer__phoneblock__messagers">
+                    <a href="/">
+                        <img src="img/head__whatsapp.png" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="img/head__telegram.png" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="img/head__viber.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =========================================END mobile__nav ================================================= -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/mask.js"></script>
     <script src="js/main.js"></script>
 </body>
 
