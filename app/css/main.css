@@ -1683,3 +1683,6 @@ a.footer__contact__title:hover {
   background-size: cover;
   padding-bottom: 60%;
 }
+.sec1__sertificate__img img {
+  width: 100%;
+}
