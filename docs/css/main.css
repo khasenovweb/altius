@@ -427,8 +427,14 @@ a.head__contact__title:hover {
 }
 .projects__item .btn__small {
   margin-top: 16px;
-  display: inline-block;
+  display: flex;
   text-transform: uppercase;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .projects__item__img {
   width: 100%;
@@ -807,6 +813,7 @@ a.footer__contact__title:hover {
 }
 .contacts__map {
   margin-top: 30px;
+  height: 300px;
 }
 .contacts__items {
   margin-top: 30px;
