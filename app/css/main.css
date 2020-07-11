@@ -58,6 +58,7 @@ a.head__contact__title:hover {
   box-shadow: -4.4px 9px 9px 1px rgba(255, 91, 1, 0.2);
   cursor: pointer;
   transition: 0.3s;
+  display: inline-block;
 }
 .btn:hover {
   background-color: #d16428;
@@ -845,7 +846,7 @@ a.footer__contact__title:hover {
 .news__detail__content {
   margin-top: -30px;
 }
-.news__detail__content p {
+.content__editor p {
   max-width: 728px;
   font-size: 15px;
   font-weight: normal;
@@ -854,9 +855,88 @@ a.footer__contact__title:hover {
   line-height: 1.6;
   margin-top: 30px;
 }
-.news__detail__content img {
+.content__editor img {
   max-width: 100%;
   margin-top: 30px;
+}
+.content__editor h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 24px;
+}
+.content__editor h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 24px;
+}
+.content__editor h3 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-top: 24px;
+}
+.content__editor h4 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 24px;
+}
+.content__editor h5 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 24px;
+  color: #f67630;
+}
+.content__editor h6 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 24px;
+}
+.content__editor ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(-webkit-max-content, 0));
+  grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+  grid-gap: 13px;
+  margin-top: 24px;
+}
+.content__editor ul li {
+  position: relative;
+  padding-left: 20px;
+}
+.content__editor ul li:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #f67630;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.content__editor a {
+  color: #f67630;
+  text-decoration: underline;
+}
+.content__editor table {
+  margin-top: 24px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 1px;
+}
+.content__editor table tr:nth-child(1) td {
+  background-color: #f67630;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #e06c2d;
+}
+.content__editor table td {
+  padding: 18px 20px;
+  border: 1px solid #f2ece9;
+  background-color: white;
+  color: #f67630;
+  font-size: 16px;
+  font-weight: bold;
 }
 .news__detail__nav__prev {
   display: flex;
@@ -1233,6 +1313,7 @@ a.footer__contact__title:hover {
 .reviews__item__head {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 .reviews__item__head img {
   margin-right: 13px;
@@ -1254,7 +1335,7 @@ a.footer__contact__title:hover {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fill, minmax(-webkit-max-content, 0));
   grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
-  grid-gap: 15px;
+  grid-gap: 10px;
 }
 .reviews__item__list li {
   line-height: 1.5;
@@ -1263,6 +1344,9 @@ a.footer__contact__title:hover {
 .reviews__item__list li span {
   font-weight: bold;
   color: #f67630;
+}
+.reviews__item__img {
+  max-width: 200px;
 }
 .about__as .container {
   display: grid;
@@ -1320,7 +1404,7 @@ a.footer__contact__title:hover {
   border-radius: 5px;
 }
 .news__item__content {
-  padding: 20px 30px ;
+  padding: 20px 30px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fill, minmax(-webkit-max-content, 0));
@@ -1685,4 +1769,7 @@ a.footer__contact__title:hover {
 }
 .sec1__sertificate__img img {
   width: 100%;
+}
+.sec1__main .btn {
+  display: inline-block;
 }
